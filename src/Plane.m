@@ -1,3 +1,12 @@
+% This file is part of cbct-calibration, an accurate geometric calibration of cone-beam CT.
+%
+% https://github.com/Rholais/cbct-calibration
+%
+% Copyright 2016 Haocheng Li and contributors
+%
+% License:  Standard 3-clause BSD; see "LICENSE" for full license terms
+%           and contributor agreement.
+
 classdef Plane < handle
 	%PLANE A class of plane
 	%   To descibe a plane's origin and normal.
