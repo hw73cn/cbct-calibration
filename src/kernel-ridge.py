@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #	This file is part of cbct-calibration, an accurate geometric calibration of cone-beam CT.
 #
 #	https://github.com/Rholais/cbct-calibration
@@ -32,7 +33,10 @@ from matplotlib import cm
 #		plt.plot(x, y)
 from matplotlib import pyplot
 
+#	Module containing Axes3D, an object which can plot 3D objects on a
+#	2D matplotlib figure.
 from mpl_toolkits.mplot3d import axes3d
+
 import numpy
 from sklearn.cross_validation import train_test_split
 from sklearn.kernel_ridge import KernelRidge
