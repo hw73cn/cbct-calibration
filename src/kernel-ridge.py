@@ -37,7 +37,12 @@ from matplotlib import pyplot
 #	2D matplotlib figure.
 from mpl_toolkits.mplot3d import axes3d
 
+#	Provides
+#		An array object of arbitrary homogeneous items
+#		Fast mathematical operations over arrays
+#		Linear Algebra, Fourier Transforms, Random Number Generation
 import numpy
+
 from sklearn.cross_validation import train_test_split
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.metrics import cohen_kappa_score, r2_score
