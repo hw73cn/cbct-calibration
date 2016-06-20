@@ -9,16 +9,29 @@
 
 """
 	Implements accurate geometric calibration of cone-beam CT.
+	利用特征数组与标签数组进行核岭回归
 """
 
 #	This is the h5py package, a Python interface to the HDF5
 #	scientific data format.
 import h5py
+
 #	This module provides a large set of colormaps, functions for
 #	registering new colormaps and for getting a colormap by name,
 #	and a mixin class for adding color mapping functionality.
 from matplotlib import cm
+
+#	Provides a MATLAB-like plotting framework.
+#	:mod:`~matplotlib.pylab` combines pyplot with numpy into a single namespace.
+#	This is convenient for interactive work, but for programming it
+#	is recommended that the namespaces be kept separate, e.g.::
+#		import numpy as np
+#		import matplotlib.pyplot as plt
+#		x = np.arange(0, 5, 0.1);
+#		y = np.sin(x)
+#		plt.plot(x, y)
 from matplotlib import pyplot
+
 from mpl_toolkits.mplot3d import axes3d
 import numpy
 from sklearn.cross_validation import train_test_split

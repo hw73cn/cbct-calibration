@@ -11,6 +11,7 @@ classdef RndPht < Pht
 	%RNDPHT The random calibration phantom
 	%   The calibration phantom consists of a random arrangement of a set 
 	%   of steel ball bearings (BBs) embedded in a cubic plastic phantom.
+	%	随机体模
 
 	properties (GetAccess = public, SetAccess = private)
 	end
