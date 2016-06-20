@@ -46,7 +46,24 @@ import numpy
 #	Split arrays or matrices into random train and test subsets
 from sklearn.cross_validation import train_test_split
 
+#	Kernel ridge regression.
+#	Kernel ridge regression (KRR) combines ridge regression (linear least
+#	squares with l2-norm regularization) with the kernel trick. It thus
+#	learns a linear function in the space induced by the respective kernel and
+#	the data. For non-linear kernels, this corresponds to a non-linear
+#	function in the original space.
+#	The form of the model learned by KRR is identical to support vector
+#	regression (SVR). However, different loss functions are used: KRR uses
+#	squared error loss while support vector regression uses epsilon-insensitive
+#	loss, both combined with l2 regularization. In contrast to SVR, fitting a
+#	KRR model can be done in closed-form and is typically faster for
+#	medium-sized datasets. On the other  hand, the learned model is non-sparse
+#	and thus slower than SVR, which learns a sparse model for epsilon > 0, at
+#	prediction-time.
+#	This estimator has built-in support for multi-variate regression
+#	(i.e., when y is a 2d-array of shape [n_samples, n_targets]).
 from sklearn.kernel_ridge import KernelRidge
+
 from sklearn.metrics import cohen_kappa_score, r2_score
 #	from sklearn.svm import SVR
 #	from sklearn.ensemble import ExtraTreesRegressor
