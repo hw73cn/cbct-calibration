@@ -14,6 +14,9 @@
 #	This is the h5py package, a Python interface to the HDF5
 #	scientific data format.
 import h5py
+#	This module provides a large set of colormaps, functions for
+#	registering new colormaps and for getting a colormap by name,
+#	and a mixin class for adding color mapping functionality.
 from matplotlib import cm
 from matplotlib import pyplot
 from mpl_toolkits.mplot3d import axes3d
