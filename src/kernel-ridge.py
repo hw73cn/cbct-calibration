@@ -43,7 +43,9 @@ from mpl_toolkits.mplot3d import axes3d
 #		Linear Algebra, Fourier Transforms, Random Number Generation
 import numpy
 
+#	Split arrays or matrices into random train and test subsets
 from sklearn.cross_validation import train_test_split
+
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.metrics import cohen_kappa_score, r2_score
 #	from sklearn.svm import SVR
