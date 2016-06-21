@@ -71,6 +71,7 @@ from sklearn.kernel_ridge import KernelRidge
 #	would get a $R^2$ score of 0.0.
 from sklearn.metrics import r2_score
 
+#	Represents a HDF5 file.
 with h5py.File('data.h5', 'r') as data:
 	XX = numpy.array(data['ftr'])
 	Y = numpy.array(data['ang'])
