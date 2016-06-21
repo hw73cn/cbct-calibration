@@ -64,9 +64,12 @@ from sklearn.cross_validation import train_test_split
 #	(i.e., when y is a 2d-array of shape [n_samples, n_targets]).
 from sklearn.kernel_ridge import KernelRidge
 
-from sklearn.metrics import cohen_kappa_score, r2_score
-#	from sklearn.svm import SVR
-#	from sklearn.ensemble import ExtraTreesRegressor
+#	$R^2$ (coefficient of determination) regression score function.
+#	Best possible score is 1.0 and it can be negative (because the
+#	model can be arbitrarily worse). A constant model that always
+#	predicts the expected value of y, disregarding the input features,
+#	would get a $R^2$ score of 0.0.
+from sklearn.metrics import r2_score
 
 with h5py.File('data.h5', 'r') as data:
 	XX = numpy.array(data['ftr'])
