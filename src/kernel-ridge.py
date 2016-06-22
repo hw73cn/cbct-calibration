@@ -117,6 +117,7 @@ for i in range(6):
 	
 
 with h5py.File('score.h5', 'w') as score:
+	#	Create a new dataset.
 	score.create_dataset('vldt', data = vldt)
 	score.create_dataset('prdc', data = prdc)
 
