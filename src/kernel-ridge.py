@@ -84,6 +84,7 @@ with h5py.File('data.h5', 'r') as data:
 	XX = numpy.array(data['ftr'])
 	Y = numpy.array(data['ang'])
 
+#	Return a new array of given shape and type, filled with zeros.
 vldt = numpy.zeros((6, 6, 3))
 prdc = numpy.zeros((6, 6, 2, 3))
 
