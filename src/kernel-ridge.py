@@ -121,8 +121,10 @@ with h5py.File('score.h5', 'w') as score:
 	score.create_dataset('vldt', data = vldt)
 	score.create_dataset('prdc', data = prdc)
 
+#	Return a new array of given shape and type, without initializing entries.
 M = numpy.empty((6, 6))
 N = numpy.empty((6, 6))
+
 Z= 1 - prdc
 #	lbl = ['$R_I$', '$R_D$', '$\\theta$', '$\\phi$', '$\\eta$']
 ang = ['$\\theta$', '$\\phi$', '$\\eta$']
