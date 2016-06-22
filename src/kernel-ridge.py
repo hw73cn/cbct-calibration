@@ -95,8 +95,7 @@ for i in range(6):
 
 		X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 1/21)
 		clf = KernelRidge(alpha=1.0)
-		#	clf = SVR(C=1.0, epsilon=0.2)
-		#	clf = ExtraTreesRegressor()
+		#	Fit Kernel Ridge regression model
 		clf = clf.fit(X_train, Y_train)
 
 		vldtLabels = clf.predict(X_train)
