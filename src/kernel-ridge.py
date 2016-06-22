@@ -73,6 +73,14 @@ from sklearn.metrics import r2_score
 
 #	Represents a HDF5 file.
 with h5py.File('data.h5', 'r') as data:
+	#	An ndarray is a (usually fixed-size) multidimensional 
+	#	container of items of the same type and size. 
+	#	The number of dimensions and items in an array is defined 
+	#	by its shape, which is a tuple of N positive integers that 
+	#	specify the sizes of each dimension. 
+	#	The type of items in the array is specified 
+	#	by a separate data-type object (dtype), 
+	#	one of which is associated with each ndarray.
 	XX = numpy.array(data['ftr'])
 	Y = numpy.array(data['ang'])
 
