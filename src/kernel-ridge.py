@@ -95,9 +95,11 @@ for i in range(6):
 
 		X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 1/21)
 		clf = KernelRidge(alpha=1.0)
+		
 		#	Fit Kernel Ridge regression model
 		clf = clf.fit(X_train, Y_train)
-
+		
+		#	Predict using the the kernel ridge model
 		vldtLabels = clf.predict(X_train)
 		vldt[i, j] = r2_score(Y_train, vldtLabels, sample_weight=None, multioutput="raw_values")
 		print(vldt[i, j])
