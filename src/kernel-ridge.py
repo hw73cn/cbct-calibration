@@ -125,12 +125,12 @@ with h5py.File('score.h5', 'w') as score:
 M = numpy.empty((6, 6))
 N = numpy.empty((6, 6))
 
-Z= 1 - prdc
-#	lbl = ['$R_I$', '$R_D$', '$\\theta$', '$\\phi$', '$\\eta$']
+Z = 1 - prdc
 ang = ['$\\theta$', '$\\phi$', '$\\eta$']
 ttl = ['Noiseless $e^2$', 'Noisy $e^2$']
 
 for i in range(6):
+	#	Return a new array of given shape and type, filled with ones.
 	M[:, i] = numpy.ones((6)) * i + 3
 	N[i, :] = numpy.ones((6)) * i * 2 + 8
 
