@@ -13,11 +13,11 @@
 
 	clear
 
-	bbN = 18;  
-	asp = 8;
+	maxBbN = 18;  
+	maxAsp = 8;
 	NUM = 21000;
 
-	ftr = zeros(2 * bbN * asp, NUM, 6, 6);
+	ftr = zeros(2 * maxBbN * maxAsp, NUM, 6, 6);
 	lbl = zeros(2, NUM);
 	ang = zeros(3, NUM);
 
